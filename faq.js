@@ -209,7 +209,7 @@ const faqDatabase = {
     ],
 
     faculty: [
-        { q: ["who is the hod","head of department","hod name","hod bca"], a: "Dr. K. Angayarkkani is the Associate Professor and Head of the Department of Computer Applications (BCA) at DGVC. She holds M.Sc., M.C.A., M.Phil., and Ph.D. qualifications." },
+        { q: ["who is the hod","head of department","hod name","hod bca"], a: "Dr. K. ANGAYARKANNI is the Associate Professor and Head of the Department of Computer Applications (BCA) at DGVC. She holds M.Sc., M.C.A., M.Phil., and Ph.D. qualifications." },
         { q: ["how many faculty","number of faculty members","faculty list"], a: "The BCA Department has 16 staff members: 15 dedicated teaching faculty and 1 non-teaching staff. All faculty are highly qualified with M.C.A., M.Phil., Ph.D., NET, and SET credentials." },
         { q: ["how to contact faculty","faculty contact"], a: "Visit the staff room on the 2nd floor of the IT and BCA Self-Financing block during office hours. You can also contact the department through the official DGVC website." },
         { q: ["are faculty approachable","can i meet faculty"], a: "Absolutely! DGVC BCA faculty maintain open-door hours and are very approachable. Never hesitate to ask questions, clarify doubts, or seek guidance for projects and career decisions." }

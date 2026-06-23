@@ -804,6 +804,10 @@
             font-size: 1.15rem;
             margin-bottom: 5px;
             color: var(--emerald-green);
+            text-transform: none;
+            font-variant: normal;
+            font-feature-settings: "smcp" off, "c2sc" off;
+            font-family: 'Poppins', sans-serif;
         }
 
         .faculty-card .designation {
@@ -916,7 +920,7 @@
 
         .flagship-badge {
             background-color: var(--emerald-green);
-            color: var(--ivory);
+            color: var(--soft-gold);
             border: 2px solid var(--soft-gold);
             padding: 15px;
             border-radius: 50%;
@@ -1807,6 +1811,17 @@
             border: 1px solid rgba(26,74,58,0.15);
         }
 
+        .highlight {
+            font-weight: 700;
+            color: #ffffff;
+            background: linear-gradient(135deg, var(--soft-gold) 0%, var(--soft-gold-light) 100%);
+            font-size: 1.15rem;
+            padding: 6px 14px;
+            border-radius: 6px;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(184, 147, 62, 0.3);
+            letter-spacing: 0.5px;
+        }
         /* HERO SECTION UPGRADES */
         .hero {
             position: relative;
@@ -2162,6 +2177,7 @@
                 padding: 8px 12px 4px;
                 gap: 6px;
             }
+            
         }
     </style>
 </head>
@@ -2187,13 +2203,14 @@
                 <ul class="nav-links" id="menu-links">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#about">Department</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#clubs">Student Clubs</a></li>
                     <li><a href="#resources">Resources</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a onclick="openChatbot()" style="cursor:pointer;">FAQ Assistant</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a onclick="openChatbot()" style="cursor:pointer;">FAQ Assistant</a></li>
+                    
                 </ul>
                 
                 <div class="nav-actions">
@@ -2289,6 +2306,16 @@
                         <h4>Parent-Teacher Dialogues</h4>
                         <p>We systematically host parent-teacher interaction meets to share student progress, attendance trends, and lay down coordinated pathways for career grooming.</p>
                     </div>
+                    <div class="parchment-card excellence-card">
+                        <i class="fa fa-chalkboard-teacher"></i>
+                        <h4>Alumni Connect</h4>
+                        <p>We organized a five-day national seminar, empowering students with industry insights, emerging technologies, employability skills, and career readiness.</p>
+                    </div>
+                    <div class="parchment-card excellence-card">
+                        <i class="fa fa-user-graduate"></i>
+                        <h4>Skill Training Programme</h4>
+                        <p>We conducted “Data Storytelling with Power BI Copilot & AI” and “Holistic Professional Leadership & Strategic Excellence,” enhancing analytics, leadership, and career readiness.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2298,7 +2325,7 @@
     <section class="program" id="program">
         <div class="container">
             <div class="section-header">
-                <h2>BCA Program</h2>
+                <h2>BCA Programme</h2>
                 <p>Discover the core details of the Bachelor of Computer Applications program structure.</p>
             </div>
             
@@ -2313,7 +2340,7 @@
                     <ul>
                         <li>Data Structures & Algorithms</li>
                         <li>Database Management Systems (DBMS)</li>
-                        <li>Operating System Internals</li>
+                        <li>Operating System </li>
                         <li>Web Development (HTML, CSS, JS)</li>
                         <li>Python, Java, & C Programming</li>
                     </ul>
@@ -2354,17 +2381,18 @@
                 <p>A testimony of dedication, brilliance, and the hard work of our students and faculty members.</p>
             </div>
             
-            <div class="achievements-grid">
-                <div class="parchment-card achievement-card">
-                    <div class="counter" data-target="70">70</div>
-                    <h4>Placement Record (%)</h4>
-                    <p>Placement is just one milestone. Strong technical skills, real-world projects, and continuous self-improvement are what truly shape long-term career success.</p>
-                </div>
-                
+            
+                 <div class="achievements-grid">
                 <div class="parchment-card achievement-card">
                     <div class="counter" data-target="15">15</div>
                     <h4>University Ranks</h4>
                     <p>Our students consistently bag top university ranks in the University of Madras academic rankings.</p>
+                </div>
+
+                <div class="parchment-card achievement-card">
+                    <!-- <div class="counter" data-target="70">70</div> -->
+                    <h4>Placement Readiness</h4>
+                    <p>Placement is just one milestone. Strong technical skills, real-world projects, and continuous self-improvement drive long-term career success. Reflecting this commitment, Mr. Balamurugan G (M.Sc. IT) secured a placement at TMB, Chennai with an impressive package of <span class="highlight">₹13.72 LPA</span></p>
                 </div>
                 
                 <!-- <div class="parchment-card achievement-card">
@@ -2376,7 +2404,7 @@
                 <div class="parchment-card achievement-card">
                     <div class="counter" data-target="30">30</div>
                     <h4>Innovative Projects</h4>
-                    <p>Students developed working software systems, cloud integrations, and mobile aids for campus usage.</p>
+                    <p>Students built cutting-edge software systems, cloud-enabled solutions, and mobile applications, showcasing innovation and technical excellence.</p>
                 </div>
             </div>
         </div>
@@ -2412,7 +2440,7 @@
                         <i class="fa fa-user-group"></i>
                     </div>
                     <h3>Student Enrichment Programs</h3>
-                    <p>students can enhance their technical expertise through the Student Enrichment Program (SEP), featuring value-added courses in Android Development, Full Stack Development, AWS, Web Designing, Robotics, DevOps, and Ethical Hacking.</p>
+                    <p>Students can enhance their technical expertise through the Student Enrichment Program (SEP), featuring value-added courses in Android Development, Full Stack Development, AWS, Web Designing, Robotics, DevOps, and Ethical Hacking.</p>
                 </div>
             </div>
         </div>
@@ -2431,82 +2459,82 @@
                 <!-- HOD -->
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/11/Dr.KAK_.jpeg" alt="Dr. K. Angayarkkani">
+                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/11/Dr.KAK_.jpeg" alt="Dr. K. ANGAYARKANNI">
                     </div>
-                    <h4>Dr. K. Angayarkkani</h4>
-                    <div class="designation">Associate Professor & HOD</div>
+                    <h4>Dr. K. ANGAYARKANNI</h4>
+                    <div class="designation">Associate Professor & Head of Department</div>
                     <div class="qualifications">M.Sc., M.C.A., M.Phil., Ph.D.</div>
                 </div>
                 
                 <!-- Assistant Professor 1 -->
                  <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/MSc-Kalai.jpg" alt="Dr. L. Meena">
+                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/MSc-Kalai.jpg" alt="Dr. M. KALAIVANI">
                     </div>
-                    <h4>Ms. M. Kalaivani</h4>
+                    <h4>Dr. M. KALAIVANI</h4>
                     <div class="designation">Assistant Professor</div>
                     <div class="qualifications">M.C.A., M.Phil., SET</div>
                 </div>
 
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2024/12/Ms.R.Sivaranjani-removebg-preview.png" alt="Dr. L. Meena">
+                        <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2024/12/Ms.R.Sivaranjani-removebg-preview.png" alt="DR. L. Meena">
                     </div>
-                    <h4>Ms. S. Sivaranjani</h4>
+                    <h4>Ms. S. SIVARANJANI</h4>
                     <div class="designation">Assistant Professor</div>
-                    <div class="qualifications">M.C.A., M.B.A, M.Phil., SET</div>
+                    <div class="qualifications">M.C.A., M.B.A., M.Phil., SET</div>
                 </div>
 
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/BCA-Jagadeesan.jpg" alt="Dr. L. Meena">
+                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/BCA-Jagadeesan.jpg" alt="Dr. N. JAGADEESAN">
                     </div>
-                    <h4>Dr. N. Jagadeesan</h4>
+                    <h4>Dr. N. JAGADEESAN</h4>
                     <div class="designation">Assistant Professor</div>
-                    <div class="qualifications">M.S.C., M.Phil., Ph.D. </div>
+                    <div class="qualifications">M.Sc., M.Phil., Ph.D. </div>
                 </div>
         
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/MSc-SAnitha.jpg" alt="Dr. L. Meena">
+                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/MSc-SAnitha.jpg" alt="Dr. S. ANITHA">
                     </div>
-                    <h4>Dr. S. Anitha</h4>
+                    <h4>Dr. S. ANITHA</h4>
                     <div class="designation">Assistant Professor</div>
-                    <div class="qualifications">M.S.C., M.Phil., ph.D.</div>
+                    <div class="qualifications">M.Sc., M.Phil., Ph.D.</div>
                 </div>
 
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/Latha-BCA.jpg" alt="Dr. L. Meena">
+                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/Latha-BCA.jpg" alt="Dr. U. LATHA">
                     </div>
-                    <h4>Dr. U. Latha</h4>
+                    <h4>Dr. U. LATHA</h4>
                     <div class="designation">Assistant Professor</div>
-                    <div class="qualifications"> M.S.C.(IT), M.S.V.(Psy), M.C.A., M.Phil., Ph.D.</div>
+                    <div class="qualifications"> M.Sc.(IT), M.S.C.(Psy), M.C.A., M.Phil., Ph.D.</div>
                 </div>
  
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/MSc-Priya.jpg" alt="Dr. L. Meena">
+                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/MSc-Priya.jpg" alt="Dr. S. SHANMUGA PRIYA">
                     </div>
-                    <h4>Dr. S. Shanmuga priya</h4>
+                    <h4>Dr. S. SHANMUGA PRIYA</h4>
                     <div class="designation">Assistant Professor</div>
-                    <div class="qualifications">M.C.A., M.Phil., NET, ph.D.</div>
+                    <div class="qualifications">M.C.A., M.Phil., NET, Ph.D..</div>
                 </div>
 
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/BCA-Kavitha.jpg" alt="Dr. L. Meena">
+                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/BCA-Kavitha.jpg" alt="Dr. S. KAVITHA">
                     </div>
-                    <h4>Dr. S. Kavitha</h4>
+                    <h4>Dr. S. KAVITHA</h4>
                     <div class="designation">Assistant Professor</div>
-                    <div class="qualifications">M.C.A., M.Phil.,ph.D., SET</div>
+                    <div class="qualifications">M.C.A., M.Phil., Ph.D., SET</div>
                 </div>
 
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/BCA-Meena.jpg" alt="Dr. L. Meena">
+                        <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/BCA-Meena.jpg" alt="Dr. L. MEENA">
                     </div>
-                    <h4>Dr. L. Meena</h4>
+                    <h4>Dr. L. MEENA</h4>
                     <div class="designation">Assistant Professor</div>
                     <div class="qualifications">M.C.A., M.Phil., SET, Ph.D.</div>
                 </div>
@@ -2516,7 +2544,7 @@
                     <div class="faculty-avatar">
                         <img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/05/BCA-Ramya.jpg" alt="Ms. K. Ramya">
                     </div>
-                    <h4>Ms. K. Ramya</h4>
+                    <h4>Ms. K. RAMYA</h4>
                     <div class="designation">Assistant Professor</div>
                     <div class="qualifications">M.C.A., M.Phil., SET</div>
                 </div>
@@ -2524,9 +2552,9 @@
                 <!-- Assistant Professor 3 -->
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2024/12/Ms.M.Archana-1.png" alt="Dr. M. Archana">
+                        <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2024/12/Ms.M.Archana-1.png" alt="Dr. M. ARCHANA">
                     </div>
-                    <h4>Dr. M. Archana</h4>
+                    <h4>Dr. M. ARCHANA</h4>
                     <div class="designation">Assistant Professor</div>
                     <div class="qualifications">M.Sc., M.Phil., Ph.D.</div>
                 </div>
@@ -2536,7 +2564,7 @@
                     <div class="faculty-avatar">
                         <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2024/12/Mr.E.Panner_Selvam-removebg-preview.png" alt="Mr. E. Panneer Selvam">
                     </div>
-                    <h4>Mr. E. Panneer Selvam</h4>
+                    <h4>Mr. E. PANNEER SELVAM</h4>
                     <div class="designation">Assistant Professor</div>
                     <div class="qualifications">M.C.A., M.Phil., NET, SET</div>
                 </div>
@@ -2544,9 +2572,9 @@
                 <!-- Assistant Professor 5 -->
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2024/12/Dr.S.Karunya-removebg-preview.png" alt="Dr. S. Karunya">
+                        <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2024/12/Dr.S.Karunya-removebg-preview.png" alt="Dr. S. KARUNYA">
                     </div>
-                    <h4>Dr. S. Karunya</h4>
+                    <h4>Dr. S. KARUNYA</h4>
                     <div class="designation">Assistant Professor</div>
                     <div class="qualifications">M.C.A., M.Phil., Ph.D.</div>
                 </div>
@@ -2556,37 +2584,37 @@
                     <div class="faculty-avatar">
                         <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/01/C.Kiruthiga.png" alt="Ms. C. Kiruthiga">
                     </div>
-                    <h4>Dr. C. Kiruthiga</h4>
+                    <h4>Dr. C. KIRUTHIGA</h4>
                     <div class="designation">Assistant Professor</div>
-                    <div class="qualifications">M.C.A., M.Phil., NET, Ph.D</div>
+                    <div class="qualifications">M.C.A., M.Phil., NET, Ph.D.</div>
                 </div>
                 
                 <!-- Assistant Professor 7 -->
                 <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/07/Dr.-J.-S.-Beulah-e1751544947124.png" alt="Dr. J. S. Beulah">
+                        <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/07/Dr.-J.-S.-Beulah-e1751544947124.png" alt="Dr. J. S. BEULAH">
                     </div>
-                    <h4>Dr. J. S. Beulah</h4>
+                    <h4>Dr. J. S. BEULAH</h4>
                     <div class="designation">Assistant Professor</div>
                     <div class="qualifications">M.Sc., M.Phil., EMBA, Ph.D.</div>
                 </div>
-                
-                 <div class="parchment-card faculty-card">
+
+                <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="Faculty_17.jpeg" alt="Dr. J. S. Beulah">
+                        <img src="Faculty_17.jpeg" alt="Dr. J. S. BEULAH">
                     </div>
-                    <h4>Mrs. R. Vasanthi</h4>
+                    <h4>Ms. R. VASANTHI</h4>
                     <div class="designation">Assistant Professor</div>
-                    <div class="qualifications">, M.C.A, NET, Ph.D.</div>
+                    <div class="qualifications">M.C.A., NET, Ph.D.</div>
                 </div>
 
                  <div class="parchment-card faculty-card">
                     <div class="faculty-avatar">
-                        <img src="Faculty_18.jpeg" alt="Dr. J. S. Beulah">
+                        <img src="Faculty_18.jpeg" alt="Dr. J. S. BEULAH">
                     </div>
-                    <h4>Ms. D. Suganya</h4>
+                    <h4>Ms. D. SUGANYA</h4>
                     <div class="designation">Assistant Professor</div>
-                    <div class="qualifications">M.S.C., M.Phil., SET.</div>
+                    <div class="qualifications">M.Sc., M.Phil., SET.</div>
                 </div>
 
                 <!-- Non Teaching -->
@@ -2594,7 +2622,7 @@
                     <div class="faculty-avatar">
                         <img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/01/Deepak.png" alt="Mr. T. G. Deepak">
                     </div>
-                    <h4>Mr. T. G. Deepak Raj</h4>
+                    <h4>Mr. T. G. DEEPAK RAJ</h4>
                     <div class="designation">Lab Assistant</div>
                     <div class="qualifications">B.E. (Non-Teaching)</div>
                 </div>
@@ -2610,18 +2638,18 @@
                 <p>Glimpses of activities, student gatherings, celebrations, and infrastructural highlights.</p>
             </div>
                <div class="gallery-grid">
-               <div class="gallery-item"><img src="cyberfest.jpeg" alt="Department Event 1"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Cyberfest</span></div></div>
                 <div class="gallery-item"><img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2026/04/2-1.png" alt="College Event 1"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Department Activity</span></div></div>
                 <div class="gallery-item"><img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2026/04/3-1.png" alt="College Event 2"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Department Activity</span></div></div>
                 <div class="gallery-item"><img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2026/04/4-1.png" alt="College Event 3"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Department Activity</span></div></div>
                 <div class="gallery-item"><img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2026/04/5-1.png" alt="College Event 4"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Department Activity</span></div></div>
                 <div class="gallery-item"><img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/04/BCA3.jpeg" alt="College Event 5"><div class="gallery-overlay"><i class="fa fa-images"></i><span>BCA Students</span></div></div>
                 <div class="gallery-item"><img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/04/BCA1.jpeg" alt="College Event 7"><div class="gallery-overlay"><i class="fa fa-images"></i><span>BCA Students</span></div></div>
+                <div class="gallery-item"><img src="cyberfest.jpeg" alt="Department Event 1"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Cyberfest</span></div></div>
                 <div class="gallery-item"><img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/04/BCA2.jpeg" alt="College Event 8"><div class="gallery-overlay"><i class="fa fa-images"></i><span>BCA Students</span></div></div>
                 <div class="gallery-item"><img src="https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2026/04/1-1.png" alt="Department Event 8"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Department Highlights</span></div></div>
                 <div class="gallery-item"><img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/04/BCA5.jpeg" alt="Department Event 9"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Department Life</span></div></div>
-                <div class="gallery-item"><img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/01/Slide2-1.jpg" alt="Department Event 10"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Campus Moments</span></div></div>
-                <div class="gallery-item"><img src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/01/Slide3-1.jpg" alt="Department Event 11"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Campus Moments</span></div></div>
+                <div class="gallery-item"><img src="cyberfes.jpeg" alt="Department Event 10"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Cyberfest</span></div></div>
+                <div class="gallery-item"><img src="./Extension.jpeg" alt="Department Event 11"><div class="gallery-overlay"><i class="fa fa-images"></i><span>Extension Activity</span></div></div>
             </div>
         </div>
     </section>
@@ -2650,7 +2678,7 @@
                 <div class="activity-card">
                     <i class="fa-solid fa-lightbulb activity-icon"></i>
                     <div class="activity-info">
-                        <h4>Ideathons</h4>
+                        <h4>Ideathon</h4>
                         <p>Brainstorming arenas where students collaborate to pitch software prototypes, app solutions, or societal aid products to panels of industry experts.</p>
                     </div>
                 </div>
@@ -2662,12 +2690,44 @@
                         <p>The academic student association of the Department of Computer Applications, facilitating peer-to-peer programming circles and workshops.</p>
                     </div>
                 </div>
+
+                <div class="activity-card">
+                    <i class="fa-solid fa-award activity-icon"></i>
+                    <div class="activity-info">
+                        <h4>Investiture Ceremony</h4>
+                        <p>The PG Department of IT & BCA proudly conducted its Investiture Ceremony, inspiring future leaders to uphold responsibility, commitment, and excellence.</p>
+                    </div>
+                </div>
                 
+                <div class="activity-card">
+                    <i class="fa-solid fa-globe activity-icon"></i>
+                    <div class="activity-info">
+                        <h4>Conference</h4>
+                        <p>Our department conducts international conferences where researchers and academicians present innovations, exchange knowledge, and collaborate globally.</p>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <i class="fa-solid fa-hands-helping activity-icon"></i>
+                    <div class="activity-info">
+                        <h4>Extension Activities </h4>
+                        <p>Through “Beyond the Classroom: Applied Learning Extension” and “Knowledge in Service: Student Extension Initiative,” we promoted coding, awareness, leadership, and community engagement.</p>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <i class="fa-solid fa-medal activity-icon"></i>
+                    <div class="activity-info">
+                        <h4>Academic Achievements</h4>
+                        <p>Our students earned prestigious awards in international research conferences and intercollegiate competitions, showcasing creativity, innovation, and academic excellence.</p>
+                    </div>
+                </div>
+
                 <div class="activity-card">
                     <i class="fa-solid fa-chalkboard-user activity-icon"></i>
                     <div class="activity-info">
                         <h4>Technical Workshops</h4>
-                        <p>Hands-on seminars covering cloud computing tools, deep learning basics, database query optimization, and dynamic website frameworks.</p>
+                        <p>Hands-on seminars covering AI in action hands-on, icon and motion design, data alchemy, cloud servers and security tools, grow and glow.</p>
                     </div>
                 </div>
                 
@@ -2680,20 +2740,13 @@
                 </div>
                 
                 <div class="activity-card">
-                    <i class="fa-solid fa-globe activity-icon"></i>
-                    <div class="activity-info">
-                        <h4>Conference</h4>
-                        <p>Our department conducts international conferences where researchers, academicians present innovations, exchange knowledge, and collaborate globally.</p>
-                    </div>
-                </div>
-                
-                <div class="activity-card">
                     <i class="fa-solid fa-trophy activity-icon"></i>
                     <div class="activity-info">
                         <h4>Sports Activities</h4>
                         <p>Our students participate in inter-departmental cricket, basketball, chess, and athletic meets, winning shields and laurels.</p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -2776,7 +2829,7 @@
     <section id="contact" style="background-color: var(--ivory); border-top: 1px solid var(--parchment-dark);">
         <div class="container" style="padding: 80px 0;">
             <div class="section-header">
-                <h2>Owl Post (Contact)</h2>
+                <h2>Communication Hub</h2>
                 <p>Send a query to our department office. We are here to assist you.</p>
             </div>
             
@@ -3659,10 +3712,10 @@
             { category: "Placements", question: "Who is eligible for placements?", answer: "Students with a clean academic track record (no standing backlogs) and minimum 60% aggregate score are eligible." },
             { category: "Placements", question: "Is there a placement training program?", answer: "Yes, the college conducts pre-placement training covering quantitative aptitude, coding logic, resume building, and mock interviews." },
             // Faculty
-            { category: "Faculty", question: "Who is the Head of the Department?", answer: "Dr. K. Angayarkkani, M.Sc., M.C.A., M.Phil., Ph.D., is the Associate Professor & Head of the Department of Computer Applications (BCA)." },
-            { category: "Faculty", question: "Who are the faculty members?", answer: "Teaching staff: Dr. K. Angayarkkani (HOD), Dr. L. Meena, Ms. K. Ramya, Dr. M. Archana, Mr. E. Panneer Selvam, Dr. S. Karunya, Ms. C. Kiruthiga, Dr. J. S. Beulah. Non-teaching: Mr. T. G. Deepak." },
+            { category: "Faculty", question: "Who is the Head of the Department?", answer: "Dr. K. ANGAYARKANNI, M.Sc., M.C.A., M.Phil., Ph.D., is the Associate Professor & Head of the Department of Computer Applications (BCA)." },
+            { category: "Faculty", question: "Who are the faculty members?", answer: "Teaching staff: Dr. K. ANGAYARKANNI (HOD), Dr. L. MEENA, Ms. K. Ramya, Dr. M. ARCHANA, Mr. E. Panneer Selvam, Dr. S. KARUNYA, Ms. C. KIRUTHIGA, Dr. J. S. BEULAH. Non-teaching: Mr. T. G. Deepak." },
             { category: "Faculty", question: "How can I contact the faculty?", answer: "You can visit the staff room on the second floor of the IT & BCA Self-Financing building, or send an email to the department office." },
-            { category: "Faculty", question: "What is the qualifications of the HOD?", answer: "Dr. K. Angayarkkani specializes in Advanced Data Mining, Neural Networks, Database Systems, and Algorithmic Analysis." },
+            { category: "Faculty", question: "What are the qualifications of the HOD?", answer: "Dr. K. ANGAYARKANNI specializes in Advanced Data Mining, Neural Networks, Database Systems, and Algorithmic Analysis." },
             { category: "Faculty", question: "Are the faculty approachable?", answer: "Yes, the faculty members maintain open office hours to clarify programming doubts and guide student projects." },
             // Transport
             { category: "Transport", question: "Is there college bus facility?", answer: "No, DGVC does not run private buses. However, the campus is highly accessible via public metro and bus networks." },
